@@ -63,8 +63,10 @@ class LinkedList:
     def print_list(self):
         current = self.head
         while current:
-            print(current.data)
+            print(current.data, "->", end=" ")
             current = current.next
+        if current is None:
+            print('Null')
 
 
 # Create a single linked list
@@ -77,5 +79,10 @@ linked_list.insert_at_end(3)
 linked_list.insert_at_end(4)
 
 #print the single linked list
+linked_list.print_list()
+
+#delete node with data 3
+linked_list.delete_node(3)
+
 linked_list.print_list()
 
