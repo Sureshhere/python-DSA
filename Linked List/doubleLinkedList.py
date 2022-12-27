@@ -1,3 +1,5 @@
+# Implementing double linked list in python
+
 class Node:
     def __init__(self, data=None, prev=None, next=None):
         self.data = data
